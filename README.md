@@ -1,7 +1,7 @@
 # Jiangda Portal Automatic Login
  江大登录门户的py模拟登陆实现
 
-##过程解析:
+## 过程解析:
 1. 初次请求登录门户(get):
 >https://pass.ujs.edu.cn/cas/login
 2. 请求验证码(get): 
@@ -10,7 +10,7 @@
 
 三次请求如果都成功并且无错误,应该返回成功登陆后的界面.
 
-###post表单内容解析：
+### post表单内容解析：
 ```
 username: 1234567890
 password: gfgwDALwERl0MuTBfg+U/m81JBDbksfasfTj8msH9HqqKztL+3lIhePVsFD5GXoDi7DYyQs7YoeN1Yz0RlMhegECvXfiIsQ=
@@ -30,7 +30,7 @@ rmShown: 1
 + _eventId: 固定值
 + rmShown: 固定值
 
-###密码加密解析:
+### 密码加密解析:
 只是将网页的js代码稍作整理提取,有兴趣的大佬可以研究一下具体的加密过程(其实是我不会).
 其中的加密函数`_etd2()`需要
 两个参数:
@@ -41,12 +41,12 @@ rmShown: 1
 
 我已经将加密的代码整理为两个js文件,使用时候只需要运行jiami.js里面的`_etd2()`函数并且传入相应的参数,获取函数返回值即可.
 
-##注意事项
+## 注意事项
 + 三次请求应该是同一个session完成
 
-##请求示例:
+## 请求示例:
 详见login.py
-####tip:
+#### tip:
 阿里云ocr识别请自行申请接口key. [戳我传送](https://market.aliyun.com/products/57124001/cmapi020020.html)
 
 用到的模块:

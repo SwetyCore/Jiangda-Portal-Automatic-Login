@@ -37,7 +37,7 @@ rmShown: 1
 + 密码
 + pwdDefaultEncryptSalt
 
-其中pwdDefaultEncryptSalt可以用正常表达式`var pwdDefaultEncryptSalt = "(.*?)";`匹配.
+其中pwdDefaultEncryptSalt可以用正则表达式`var pwdDefaultEncryptSalt = "(.*?)";`匹配.
 
 我已经将加密的代码整理为两个js文件,使用时候只需要运行jiami.js里面的`_etd2()`函数并且传入相应的参数,获取函数返回值即可.
 

@@ -49,7 +49,8 @@ rmShown: 1
 
 重写了login.py,建议使用loginRe.py
 + 调用登陆模块示例:
-+++ ```import loginRe
+ ```
+import loginRe
 import getpass
 
 if __name__ == '__main__':

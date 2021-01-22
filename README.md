@@ -45,7 +45,20 @@ rmShown: 1
 + 三次请求应该是同一个session完成
 
 ## 请求示例:
-详见login.py
+~~详见login.py~~
+
+重写了login.py,建议使用loginRe.py
++ 调用登陆模块示例:
++++ ```import loginRe
+import getpass
+
+if __name__ == '__main__':
+    username = input('学号: ')
+    pwd = getpass.getpass("密码: ")
+    lg = loginRe.Login('6e9b090sdad5c1234d0bbb88de18097eb')
+    lg.Login(username=username, password=pwd)
+
+```
 #### tip:
 阿里云ocr识别请自行申请接口key. [戳我传送](https://market.aliyun.com/products/57124001/cmapi020020.html)
 
@@ -63,6 +76,6 @@ import execjs
 
 模拟登陆的用途:应该没什么用吧 (bushi)
 
-仅供学习交流,应该不至于喝茶吧 (逃)
+仅供学习交流,应该不至于被叫去喝茶吧? (逃)
 
 
